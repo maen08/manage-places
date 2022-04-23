@@ -9,10 +9,11 @@ urlpatterns = [
     path('api/<slug:slug>', PlaceView.as_view(
         {
             'delete':'destroy',
-            'get':'list'
+            'get':'list',
+            'post':'partial_update'
         }
     )),
-    path('api/', PlaceView.as_view(
+    path('api', PlaceView.as_view(
         {
             'get':'list',
             'post':'create'
