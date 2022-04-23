@@ -12,11 +12,11 @@
 - The project is dockerized and shipped on the docker hub as an independent docker container. To run this container follow this steps (make sure you have docker installed in your machine):
 
 ```
-# Pull the container from the dockerhub (registry)
-docker pull maen08/manage_places
+# Build the docker container
+docker-compose up --build
 
-# Run the container
-docker run -d manage_places
+# Run the container in detach mode
+docker-compose up -d
 
 # Navigate to your web browser, the link should be
 # http://YOUR_IP_ADDRESS:8000/api
