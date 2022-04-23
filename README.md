@@ -27,17 +27,15 @@ docker run -d manage_places
 ## Run the project Manually (Optional)
 - Clone a repo and install all dependencies
 ```
-$ git clone https://github.com/maen08/Simple_Task.git
+$ git clone https://github.com/maen08/manage-places.git
 
-$ cd Simple_Task
+$ cd manage_places
 
 $ pip install -r requirements.txt 
-```
 
-## Run the project
-```
+
 # Navigate to root directory of the project (make sure you see manage.py file)
-$ cd manage_places
+
 $ cd manage_place_project
 
 # Prepare the database by running
