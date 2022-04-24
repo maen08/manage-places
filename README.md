@@ -8,18 +8,31 @@
 - VCs good practices
 
 
+## Base endpoint
+
+- http://0.0.0.0:8000/api
+
+
 ## Run the project with Docker (Recommended)
-- The project is dockerized and shipped on the docker hub as an independent docker container. To run this container follow this steps (make sure you have docker installed in your machine):
+- The project is dockerized in a container with the help of docker and docker-compose
+
+(make sure you have docker and docker-compose installed in your machine):
 
 ```
-# Build the docker container
+# Clone the project
+git clone https://github.com/maen08/manage-places.git
+
+# Navigate to the directory
+cd manage_place_project
+
+# make sure you're in the directory where you see manage.py file (when you list eg. ls) 
+
+# Run the container
 docker-compose up --build
 
-# Run the container in detach mode
-docker-compose up -d
 
 # Navigate to your web browser, the link should be
-# http://YOUR_IP_ADDRESS:8000/api
+# http://0.0.0.0:8000/api
 
 ```
 
@@ -29,14 +42,13 @@ docker-compose up -d
 ```
 $ git clone https://github.com/maen08/manage-places.git
 
-$ cd manage_places
+$ cd manage_place_project
 
 $ pip install -r requirements.txt 
 
 
 # Navigate to root directory of the project (make sure you see manage.py file)
 
-$ cd manage_place_project
 
 # Prepare the database by running
 $ python manage.py makemigrations
